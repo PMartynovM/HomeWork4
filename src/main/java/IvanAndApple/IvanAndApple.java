@@ -14,7 +14,9 @@ public class IvanAndApple {
         int inputApple;
 
         System.out.println("Введите количество яблок от 1 до 100");
+        
         inputApple = scannerApple.nextInt();
+        
         if (inputApple < 0 || inputApple > 100) {
             System.out.println("Введите корректное количество яблок от 1 до 100");
             return;
