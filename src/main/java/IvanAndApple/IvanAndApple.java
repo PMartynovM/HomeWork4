@@ -9,7 +9,6 @@ public class IvanAndApple {
 
         System.out.println("Введите имя");
         inputName = scannerName.nextLine();
-//        return inputName;
 
         Scanner scannerApple = new Scanner(System.in);
         int inputApple;
@@ -23,15 +22,23 @@ public class IvanAndApple {
 
         String[] AppleWordAll = {"яблок", "яблоко", "яблока"};
 
-        int result = inputApple % 100;
-        if (result >= 5 && result <= 20 || result == 0) {
+        int result = inputApple;
+        if (result > 5 && result <= 20) {
+            System.out.println(inputName + " хранит " + inputApple + " " + AppleWordAll[0]);
+            return;
+        }
+
+        result = inputApple % 10;
+        if (result == 0) {
             System.out.println(inputName + " хранит " + inputApple + " " + AppleWordAll[0]);
         }
-        result = inputApple % 10;
         if (result >= 2 && result <= 4) {
             System.out.println(inputName + " хранит " + inputApple + " " + AppleWordAll[2]);
         }
-        if (result == 1) {
+        if (result >= 5 && result < 9 || result == 9) {
+            System.out.println(inputName + " хранит " + inputApple + " " + AppleWordAll[0]);
+        }
+        if (result == 1 ) {
             System.out.println(inputName + " хранит " + inputApple + " " + AppleWordAll[1]);
         }
     }
