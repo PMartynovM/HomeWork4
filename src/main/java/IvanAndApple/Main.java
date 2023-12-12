@@ -7,7 +7,7 @@ public class Main {
     }
 }
 
-
+// ЧТО ТО ДОБАВИЛИ ДЛЯ ПР
 //    int i = 100;
 //           while  (i > 0) {
 //                   i++;
